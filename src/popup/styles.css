@@ -1,0 +1,22 @@
+body { width: 320px; }
+main { padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+
+header.brand { display: flex; align-items: baseline; justify-content: space-between; }
+header.brand h1 { font-size: 15px; }
+
+.status { display: flex; flex-direction: column; gap: 3px; }
+.status .when { font-size: 13px; }
+
+dl.kv { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; margin: 0; font-size: 12.5px; }
+dl.kv dt { color: var(--text-muted); }
+dl.kv dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+
+.actions { display: flex; gap: 8px; }
+.actions button { flex: 1; }
+
+.pass { display: flex; gap: 6px; }
+.pass input { flex: 1; min-width: 0; }
+
+footer.links { display: flex; gap: 14px; font-size: 12.5px; }
+footer.links a { cursor: pointer; text-decoration: none; }
+footer.links a:hover { text-decoration: underline; }

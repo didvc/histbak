@@ -1,0 +1,51 @@
+main { max-width: 760px; margin: 0 auto; padding: 32px 24px 96px; display: flex; flex-direction: column; gap: 24px; }
+
+header.page { display: flex; flex-direction: column; gap: 4px; margin-bottom: 4px; }
+header.page p { margin: 0; }
+
+section { display: flex; flex-direction: column; gap: 14px; }
+section > header { display: flex; flex-direction: column; gap: 2px; }
+section > header p { margin: 0; font-size: 13px; }
+
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field > .label { font-weight: 600; font-size: 13px; }
+.field > .hint { font-size: 12.5px; color: var(--text-muted); }
+.field.inline { flex-direction: row; align-items: center; justify-content: space-between; gap: 16px; }
+.field.inline .grow { display: flex; flex-direction: column; gap: 3px; }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+
+.preview {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  background: var(--bg-sunken);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tokens { display: flex; flex-wrap: wrap; gap: 5px; }
+.tokens button {
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+textarea { min-height: 96px; }
+
+.savebar {
+  position: sticky;
+  bottom: 0;
+  margin: 0 -24px -96px;
+  padding: 12px 24px;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.savebar .status { font-size: 13px; color: var(--text-muted); }

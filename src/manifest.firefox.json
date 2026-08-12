@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "histbak — history backup & viewer",
+  "short_name": "histbak",
+  "version": "0.1.0",
+  "description": "Scheduled, compressed, optionally encrypted backups of your browsing history, plus a viewer that makes sense of it. Entirely local.",
+  "permissions": ["history", "downloads", "storage", "unlimitedStorage", "alarms"],
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+  "action": {
+    "default_title": "histbak",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "histbak@didvc.github.io",
+      "strict_min_version": "115.0"
+    }
+  }
+}
