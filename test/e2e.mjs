@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 import { decrypt, isEncrypted } from "../src/lib/crypto.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const EXT = path.join(ROOT, "build/chrome");
+const EXT = process.env.HISTBAK_EXT || path.join(ROOT, "build/chrome");
 
 let pass = 0, fail = 0;
 const eq = (a, e, label) => {
